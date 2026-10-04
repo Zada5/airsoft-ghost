@@ -1,0 +1,254 @@
+:root {
+  --sky: #AED9DF;
+  --grass: #9DA95D;
+  --olive: #5F6437;
+  --ink: #33302B;
+  --paper: #FAFAFA;
+  --heading-font: "Avenir Next Condensed", "Futura", "Helvetica Neue", "Arial Narrow", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, .wordmark {
+  font-family: var(--heading-font);
+}
+
+a {
+  color: var(--olive);
+}
+
+img { max-width: 100%; display: block; }
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1rem;
+  background: var(--paper);
+}
+
+.site-header a.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.site-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.wordmark {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 1.1rem;
+  color: var(--ink);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(180deg, var(--sky), var(--grass));
+  text-align: center;
+  padding: 3rem 1rem 3.5rem;
+}
+
+.hero img.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 6px solid white;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  margin: 0 auto 1.2rem;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-size: 2.4rem;
+  margin: 0.2rem 0;
+  color: var(--ink);
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.4rem 0;
+}
+
+.hero .subtagline {
+  margin: 0 0 1.5rem;
+}
+
+.hero .lost-note {
+  font-size: 1.1rem;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--paper);
+  border: 2px solid var(--ink);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border: 2px solid var(--ink);
+}
+
+.btn:focus-visible, a:focus-visible {
+  outline: 3px solid var(--olive);
+  outline-offset: 2px;
+}
+
+/* Main content */
+main {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2.5rem 1rem;
+}
+
+main.legal {
+  max-width: 44rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+@media (min-width: 560px) {
+  .card-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (min-width: 900px) {
+  .card-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.8rem;
+  padding: 1.2rem;
+}
+
+.card .emoji {
+  font-size: 1.6rem;
+}
+
+/* Notice box */
+.notice {
+  background: white;
+  border-left: 6px solid var(--olive);
+  padding: 1rem 1.2rem;
+  border-radius: 0.3rem;
+}
+
+.summary-box {
+  background: white;
+  border: 2px solid var(--olive);
+  border-radius: 0.6rem;
+  padding: 1rem 1.2rem;
+  margin: 1.2rem 0 2rem;
+}
+
+/* Table of contents */
+.toc {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.6rem;
+  padding: 1rem 1.2rem;
+  margin: 1rem 0 2rem;
+}
+
+.toc ol {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+th {
+  background: #f0f0ee;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.site-footer a {
+  color: var(--sky);
+}
+
+.site-footer .footer-links {
+  margin: 0.4rem 0;
+}
+
+.site-footer .disclaimer {
+  max-width: 44rem;
+  margin: 0.8rem auto 0;
+  opacity: 0.85;
+}
