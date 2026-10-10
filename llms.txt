@@ -1,0 +1,21 @@
+# Airsoft Ghost
+
+> Airsoft Ghost is an Israeli airsoft YouTube channel (@airsoftghostplayer). It posts head-cam POV games every week, filmed at airsoft fields in Israel: ghillie-suit sniper stalks, close-quarters (CQB) fights and night-vision games, plus short clips on Instagram and Facebook. Israel is the channel's number-one audience country.
+
+Hebrew name: איירסופט גוסט. Tagline: "You can't hit what you can't see."
+
+## Pages
+
+- [Home](https://zada5.github.io/airsoft-ghost/): what the channel is, what it posts, FAQ, links to every channel.
+- [Airsoft in Israel guide](https://zada5.github.io/airsoft-ghost/airsoft-israel.html): where to play airsoft in Israel, what the 2025 replica-gun law means for players, how to start, FAQ (English + Hebrew summary).
+
+## Channels
+
+- [YouTube](https://www.youtube.com/@airsoftghostplayer): weekly airsoft POV videos and Shorts.
+- [Instagram](https://www.instagram.com/airsoft_ghost_official): Reels of the best hits.
+- [Facebook](https://www.facebook.com/airsoftghostofficial): the same clips for Facebook.
+
+## Optional
+
+- [Privacy Policy](https://zada5.github.io/airsoft-ghost/privacy.html)
+- [Terms of Use](https://zada5.github.io/airsoft-ghost/terms.html)
